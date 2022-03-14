@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>獲利計算器</title>
+    <link rel="stylesheet" href="money.css">
+    <script type="text/javascript" src="change.js"></script>
+</head>
+<body>
+
+    <div class="login">
+        <h2>獲利計算器</h2>
+        <form class="form">
+            <div class="group">
+                <label for="buy">買入價位:</label>
+                <input type="text" id="buy">
+            </div>
+            <div class="group">
+                <label for="self">賣出價位:</label>
+                <input type="text" id="self">
+            </div>
+            <input type="reset" value="重新輸入價格" >
+        </form>
+       
+
+        <div class="item">
+            <button id="btn1" onclick="add()" class="btn">總花費試算</button>
+            <button id="btn2" onclick="one()" class="btn">買進總花費試算</button>
+            <button id="btn3" onclick="sale()" class="btn">賣出手續費試算</button>
+            <button id="btn4" onclick="pro()" class="btn">總獲利</button>
+        </div>
+        <div class="item2">
+            <button id="btn5" onclick="reset()" class="btn">重新計算</button>
+        </div>
+        <div class="text">
+            <div class="text-buy">買進總花費(含手續費):<output id="costBuy"></output></div>
+            <div class="text-self">賣出手續費:<output id="costSelf"></output></div>
+            <div class="text-total">總花費(買進成本+買賣手續費):<output id="costTotal"></output></div>
+            <div>總獲利:<output id="costProfit"></output></div>
+        </div>
+    </div>
+    
+</body>
+</html>

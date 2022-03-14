@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+body{
+    background: url(https://picsum.photos/1200/1200?random=2) no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    width: 760px;
+    height: 600px;
+    background-color:rgba(192, 192, 192, .5);
+    border-radius: 10px 10px 10px 10px;
+    border: 10px solid #FFF;
+    backdrop-filter: blur(5px);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login .form{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 720px;
+    justify-content: center;
+}
+
+.group{
+    height: 50px;
+    padding: 20px;
+    margin: auto;
+}
+
+
+    
+input[type=text]{
+    width: 130px;
+    height: 40px;
+    font-size: 25px;
+}
+input[type=reset]{
+    width: 500px;
+    height: 40px;
+    margin-top: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color:  #6ab4fe  ;
+    color: #FFF;
+    
+}
+
+.item .btn{
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    background-color:  #000;
+    color: #FFF;
+    width: 180px;
+    padding: 10px;
+    
+    
+}
+.item2 .btn{
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    background-color:  #0b1746;
+    color: #FFF;
+    width: 180px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.text{
+    width: 70%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
+    margin: 10px;
+}
+.text-buy,
+.text-self,
+.text-total{
+    margin-bottom: 10px;
+}
